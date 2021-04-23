@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    height: 0;
+}
+
+canvas {
+    vertical-align: bottom;
+    background-image: url("./background.jpg");
+    background-size: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}

@@ -1,8 +1,23 @@
 body {
     margin: 0;
     height: 0;
+    font-family: 'Unica One', cursive;
+    background-color: #FDFDFD;
+}
+
+body h1{
+    margin: 25px;
+    position: absolute;
+    z-index: 1;
+    background: none;
+    font-size: 75px;
+    color: #343434;
 }
 
 canvas {
     vertical-align: bottom;
+    background-image: url("./ryubackground.jpg");
+    background-size: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
 }

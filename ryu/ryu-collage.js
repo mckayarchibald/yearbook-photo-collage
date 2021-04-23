@@ -13,7 +13,7 @@ let currentX = null;
 let currentY = null;
 
 let index = 0;
-const images = ["yearbook1.jpg","yearbook2.jpg","yearbook3.jpg","yearbook4.jpg"].map(src => {
+const images = ["ryu.png"].map(src => {
     const image = document.createElement("img");
     image.src = src;
     return image;
@@ -38,10 +38,10 @@ canvas.addEventListener("click", function() {
 const draw = function() {
     if(currentX) {
         if(images[index].complete) {
-            context.drawImage(images[index], currentX - 150, currentY - 200, 300, 400) ;
+            context.drawImage(images[index], currentX, currentY, 50, 400) ;
         }
-        currentX = currentX + (aimX - currentX) * 0.1;
-        currentY = currentY + (aimY - currentY) * 0.1;
+        currentX = currentX + (aimX - currentX) * 0.05;
+        currentY = currentY + (aimY - currentY) * 0.05;
     }
     requestAnimationFrame(draw);
 }
